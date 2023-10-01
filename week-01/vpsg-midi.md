@@ -11,6 +11,7 @@ I will need a prototyping board with some Flash, a decent ADC, two Bela Trill mu
 * [Hardware block diagram](./VPSG-01-Hardware%20block%20diagram.drawio.pdf)
 * [Software block diagram](./VPSG-02-Software%20block%20diagram.drawio.pdf)
 * [Hierarchy control diagram](./VPSG-03-Hierarchy%20control%20diagram.drawio.pdf)
+* [Layered diagram](./VPSG-04-Layered%20diagram.drawio.pdf)
 
 
 ## Breakdown
