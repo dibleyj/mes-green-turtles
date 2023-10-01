@@ -1,12 +1,19 @@
 # VPSG-MIDI
+
+## Synopsis
 The proposed system is a USB-MIDI controller that allows a player to experiment with using the playing style and expressive potential of a pedal steel guitar to control software instruments. 
+
+The [first two paragraphs of this article](https://www.npr.org/2020/01/07/793989801/the-endless-potential-of-the-pedal-steel-guitar-an-odd-duck-by-any-measure) provide some context as to why one would wish to do such a thing. 
+
+I will need a prototyping board with some Flash, a decent ADC, two Bela Trill multitouch sensors, an I2C controller for dealing with those, at least one decent channel of an ADC for reading the expression pedal, a fairly significant amount of GPIO, and much more time to spend on calibration and modelling logic than I've bargained for. 
 
 * [Hardware units](./VPSG-00-Hardware%20units.drawio.pdf)
 * [Hardware block diagram](./VPSG-01-Hardware%20block%20diagram.drawio.pdf)
 * [Software block diagram](./VPSG-02-Software%20block%20diagram.drawio.pdf)
 * [Hierarchy control diagram](./VPSG-03-Hierarchy%20control%20diagram.drawio.pdf)
 
-## Synopsis
+
+## Breakdown
 The hardware modules of this system are: 
 
 1. A pluck controller, based on a one-dimensional multitouch strip. This is binned into eight areas. Touch events in one of these areas will trigger a MIDI note-on event: the pitch of this note-on event is a function of (a) the current reading from the pitch controller, and (b) the pitch offset ('tuning') assigned to this area in the system instrument model. 
