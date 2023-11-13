@@ -87,6 +87,10 @@ My approach to development is broadly this:
 
 4. Bring up `tinyUSB` within the application and get one or two of the example programs to run, with console logging. Prove that the thing will enumerate with the correct class ID on a USB bus.
 
+> 😣
+> 
+> If, at this point, I absolutely can't get tinyUSB integrated for some reason, I just about retain the option of switching back and bit-banging old-style MIDI output.
+
 5. Figure out a suitably modular approach to the software architecture, that allows for off-target unit testing of several blocks of functionality. In particular: the `Touch / MIDI translator` and the `MIDI System Exclusive` manager. I want to use modern C++ as much as possible. 
 
 6. ...I'm sorry, I had a COVID vaccine booster yesterday and this is all I can write so far, I'm *so* out of it. I'll update throughout the week.
